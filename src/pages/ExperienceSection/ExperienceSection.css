@@ -1,0 +1,40 @@
+
+#experience{
+    width: 100%;
+    background-image: url("../../../public/images/bg2.avif");
+}
+
+#experience .container {
+    padding-top:10vh ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.experienceInfo {
+    text-align: center;
+}
+
+.experienceCards {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 3.5rem;
+    width: 100%;
+}
+
+.contact{
+    margin: 10vh ;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}

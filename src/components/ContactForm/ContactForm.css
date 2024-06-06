@@ -1,0 +1,102 @@
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #E9A936;
+    padding: 50px;
+    font-family: 'Mulish', sans-serif;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.form-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-container {
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Allow the form container to flexibly take available space */
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    /* flex-direction: column; Change to column for better stacking on smaller screens */
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 50%; /* Full width on smaller screens */
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin:10px
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 70px;
+    width: 100%;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2e2413;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #4b3a24;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-section {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    
+    .form-container {
+        margin-left: 0;
+        margin-top: 20px; /* Add margin on top for separation */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+    
+    .form-image img {
+        max-width: 100%; /* Ensure the image can scale down */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-header {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    
+    .submit-button {
+        font-size: 14px; /* Adjust button font size for smaller screens */
+    }
+}
